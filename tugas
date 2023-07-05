@@ -1,0 +1,50 @@
+package TugasWaktuZoom;
+
+public class Tugasdadakan {
+    public static void main(String[] args) {
+        Calculate p = new Calculate();
+        int s = p.setAngka1(8);
+        int k = p.setAngka2(9);
+        p.addAllNumber();
+        p.multiplyNumber(p.getAngka1(), p.getAngka2());
+    }
+}
+
+class Calculate {
+    private int angka1;
+    private int angka2;
+
+    // Setter untuk angka1
+    public int setAngka1(int angka1) {
+        this.angka1 = angka1;
+        return angka1;
+    }
+
+    // Setter untuk angka2
+    public int setAngka2(int angka2) {
+        this.angka2 = angka2;
+        return angka2;
+    }
+
+    // Getter untuk angka1
+    public int getAngka1() {
+        return angka1;
+    }
+
+    // Getter untuk angka2
+    public int getAngka2() {
+        return angka2;
+    }
+
+    // Menjumlahkan dua angka
+    public void addAllNumber() {
+        int hasil = angka1 + angka2;
+        System.out.println("Hasil penjumlahan: " + hasil);
+    }
+
+    // Mengalikan dua angka dan mencetak hasilnya
+    public void multiplyNumber(int angka1, int angka2) {
+        int hasil = angka1 * angka2;
+        System.out.println("Hasil perkalian: " + hasil);
+    }
+}
